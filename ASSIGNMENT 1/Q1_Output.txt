@@ -1,0 +1,34 @@
+========================================
+Q1: POST /products - Add New Product
+========================================
+
+Test: Added "Laptop Stand" product
+
+Request:
+POST /products
+Body: {
+  "name": "Laptop Stand",
+  "price": 1299,
+  "category": "Electronics",
+  "in_stock": true
+}
+
+Response:
+Status Code: 201 Created ✓
+
+Response Body:
+{
+  "message": "Product added",
+  "product": {
+    "id": 5,
+    "name": "Laptop Stand",
+    "price": 1299,
+    "category": "Electronics",
+    "in_stock": true
+  }
+}
+
+Result: SUCCESS ✓
+- Product successfully added with auto-generated ID: 5
+- Status code 201 (Created) as expected
+- All product fields correctly saved

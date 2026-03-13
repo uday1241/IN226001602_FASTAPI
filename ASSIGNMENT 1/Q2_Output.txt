@@ -1,0 +1,28 @@
+========================================
+Q2: PUT /products/3 - Update Product
+========================================
+
+Test: Updated USB Hub (ID: 3) price
+
+Request:
+PUT /products/3?price=649
+
+Response:
+Status Code: 200 OK ✓
+
+Response Body:
+{
+  "message": "Product updated",
+  "product": {
+    "id": 3,
+    "name": "USB Hub",
+    "price": 649,
+    "category": "Electronics",
+    "in_stock": false
+  }
+}
+
+Result: SUCCESS ✓
+- Product price successfully updated from 799 to 649
+- Status code 200 (OK) as expected
+- Product details correctly returned

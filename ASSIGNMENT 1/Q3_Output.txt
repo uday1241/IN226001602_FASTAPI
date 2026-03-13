@@ -1,0 +1,22 @@
+========================================
+Q3: DELETE /products/4 - Delete Product
+========================================
+
+Test: Deleted "Pen Set" (ID: 4)
+
+Request:
+DELETE /products/4
+
+Response:
+Status Code: 200 OK ✓
+
+Response Body:
+{
+  "message": "Product 'Pen Set' deleted"
+}
+
+Result: SUCCESS ✓
+- Product "Pen Set" successfully deleted
+- Status code 200 (OK) as expected  
+- Confirmation message includes product name
+- Product removed from products list
